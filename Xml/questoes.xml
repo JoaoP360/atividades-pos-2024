@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE quiz SYSTEM "quiz.dtd">
+
+<quiz versao="1.0"> 
+    
+  <disciplina>Jogos Jogados jogantes</disciplina>
+  <professor>
+    <nome> João Pedro</nome>
+    <matrícula>40028922</matrícula>
+  </professor>
+  <turma>INFOWEB 2021 4V</turma>
+  <data>20/03/2024</data>
+  <questões>
+    <questão>
+      <enunciado>O Minecraft foi criado em que ano?</enunciado>
+      <pontuação>10</pontuação>
+      <alternativas>
+        <alternativa correta="sim">2009</alternativa>
+        <alternativa correta="nao">2011</alternativa>
+        <alternativa correta="nao">2010</alternativa>
+        <alternativa correta="nao">2012</alternativa>
+      </alternativas>
+    </questão>
+
+    <questão>
+      <enunciado>Qual foi o jogo do ano de 2020</enunciado>
+      <pontuação></pontuação>
+      <alternativas>
+        <alternativa correta="sim">The Last of Us Part II</alternativa>
+        <alternativa correta="nao">Animal Crossing: New Horizons</alternativa>
+        <alternativa correta="nao">Ghost of Tsushima</alternativa>
+        <alternativa correta="nao">Final Fantasy VII Remake</alternativa>
+      </alternativas>
+    </questão>
+
+    <questão>
+      <enunciado>God of War de 2018 se passa em qual mitologia</enunciado>
+      <pontuação>10</pontuação>
+      <alternativas>
+        <alternativa correta="sim">Mitologia Nórdica</alternativa>
+        <alternativa correta="nao">Mitologia Graga</alternativa>
+        <alternativa correta="nao">Mitologia Egípcia</alternativa>
+        <alternativa correta="nao">Mitologia Japonesa</alternativa>
+      </alternativas>
+    </questão>
+
+    <questão>
+      <enunciado>Qual foi o primeiro jogo a ir para o espaço?</enunciado>
+      <pontuação>20</pontuação>
+      <alternativas>
+        <alternativa correta="nao">Super Mario </alternativa>
+        <alternativa correta="nao">The Legend of Zelda</alternativa>
+        <alternativa correta="sim">Tetris</alternativa>
+        <alternativa correta="nao">Donkey Kong</alternativa>
+      </alternativas>
+    </questão>
+
+    <questão>
+      <enunciado>Qual jogo possou por uma Epidemia Virtual</enunciado>
+      <pontuação>20</pontuação>
+      <alternativas>
+        <alternativa correta="sim">Word of Warcraft</alternativa>
+        <alternativa correta="nao">Magic</alternativa>
+        <alternativa correta="nao">Deltarune</alternativa>
+        <alternativa correta="nao">Ragnarok</alternativa>
+      </alternativas>
+    </questão>
+  </questões>
+</quiz>
