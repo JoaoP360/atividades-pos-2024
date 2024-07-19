@@ -4,41 +4,51 @@
     <prato id="P01">
         <nome>Espetio de carne</nome>
         <descricao>Carne de boi assada</descricao>
-        <ingredientes>Carne de boi</ingredientes>
-        <preco>2 reais</preco>
+        <ingredientes>
+            <ingrediente>Carne de boi</ingrediente>
+        </ingredientes>
+        <preco moeda="brl">2 reais</preco>
         <calorias>800 kcal</calorias>
-        <tempPreparo>13 minutos</tempPreparo>
+        <tempoPreparo>13 minutos</tempoPreparo>
     </prato>
     <prato id="P02">
         <nome>Pão com ovo</nome>
         <descricao>Um pão com ovo</descricao>
-        <ingredientes>Pão e ovo</ingredientes>
-        <preco>2 reais</preco>
+        <ingredientes>
+            <ingrediente>Pão e ovo</ingrediente>
+        </ingredientes>
+        <preco moeda="brl">2 reais</preco>
         <calorias>800 kcal</calorias>
-        <tempPreparo>5 minutos</tempPreparo>
+        <tempoPreparo>5 minutos</tempoPreparo>
     </prato>
     <prato id="P03">
         <nome>Cuzcuz com Ovo</nome>
         <descricao>Um cuzuz com ovo</descricao>
-        <ingredientes>cuzcuz, ovo</ingredientes>
-        <preco>4 reais</preco>
+        <ingredientes>
+            <ingrediente>cuzcuz, ovo</ingrediente>
+        </ingredientes>
+        <preco moeda="brl">4 reais</preco>
         <calorias>1000 kcal</calorias>
-        <tempPreparo>10 minutos</tempPreparo>
+        <tempoPreparo>10 minutos</tempoPreparo>
     </prato>
     <prato id="P04">
         <nome>Humburger de siri</nome>
         <descricao>Um humburger de siri direto do fundo do mar</descricao>
-        <ingredientes>Pão, Siri, tomate, alface</ingredientes>
-        <preco>8 reais</preco>
+        <ingredientes>
+            <ingrediente>Pão, Siri, tomate, alface</ingrediente>
+        </ingredientes>
+        <preco moeda="brl">8 reais</preco>
         <calorias>1200 kcal</calorias>
-        <tempPreparo>10 minutos</tempPreparo>
+        <tempoPreparo>10 minutos</tempoPreparo>
     </prato>
     <prato id="P05">
         <nome>Cuzcuz com salsicha</nome>
         <descricao>Um cuzcuz com salsicha</descricao>
-        <ingredientes>Cuzcuz, salsicha</ingredientes>
-        <preco>4 reais</preco>
+        <ingredientes>
+            <ingrediente>Cuzcuz, salsicha</ingrediente>
+        </ingredientes>
+        <preco moeda="brl">4 reais</preco>
         <calorias>1000 kcal</calorias>
-        <tempPreparo>15 minutos</tempPreparo>
+        <tempoPreparo>15 minutos</tempoPreparo>
     </prato>
 </cardapio>
