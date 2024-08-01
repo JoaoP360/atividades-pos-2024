@@ -4,28 +4,48 @@
     targetNamespace="http://cardapio.org"
     elementFormDefault="unqualified">
 
-
+    <element name="cardapio">
+        <complexType>
+          <sequence>
+            <element ref="c:prato" maxOccurs="unbounded"/>
+          </sequence>
+        </complexType>
+      </element>
+      
     <element name="nome" type="string" />
     <element name="descricao" type="string" />
-    <element name="ingredientes" type="string" />
     <element name="tempoPreparo" type="string" />
     <element name="calorias" type="string" />
 
-    <simpleType name="ingredientes">
-        <restriction base="string">
-                       
-        </restriction>
-    </simpleType>
+    <element name="preco">
+        <simpleType>
+          <restriction base="decimal">
+            <fractionDigits value="2"/>
+          </restriction>
+        </simpleType>
+      </element>
 
-    <element name="prato">
+      <element name="ingrediente" type="string"/>
+
+      <element name="ingredientes">
+        <complexType>
+          <sequence>
+            <element ref="c:ingrediente" maxOccurs="unbounded"/>
+          </sequence>
+        </complexType>
+      </element>
+
+      <element name="prato">
         <complexType>
             <sequence>
-                <element ref="c:nome" />
-                <element ref="c:descricao" />
-                <element ref="c:ingredientes" />
-                <element ref="c:tempoPreparo" />
-                <element ref="c:calorias" />
+                <element ref="c:nome"/>
+                <element ref="c:descricao"/>
+                <element ref="c:ingredientes"/>
+                <element ref="c:preco"/>
+                <element ref="c:calorias"/>
+                <element ref="c:tempoPreparo"/>
             </sequence>
+            <attribute name="id" type="integer" use="required" />
         </complexType>
     </element>
 </schema>
