@@ -1,0 +1,103 @@
+{
+    "imobiliaria": {
+        "imovel": [
+            {
+                "descricao": "Casa Verde",
+                "proprietario": {
+                    "nome": "Bruce",
+                    "email": "naosouohulk@gmail.com",
+                    "telefone": "(84) 4002-8922"
+                },
+                "endereco": {
+                    "rua": "Rua A.V Ali",
+                    "bairro": "Centro",
+                    "cidade": "NY",
+                    "numero": "100"
+                },
+                "caracteristicas": {
+                    "tamanho": "200m²",
+                    "numQuartos": 3,
+                    "numBanheiros": 1
+                },
+                "valor": 600000
+            },
+            {
+                "descricao": "Casa Preta",
+                "proprietario": {
+                    "nome": "T'Challa",
+                    "email": "panterinha01@gmail.com",
+                    "telefone": "(84) 4002-8922"
+                },
+                "endereco": {
+                    "rua": "Rua A.V",
+                    "bairro": "Centro",
+                    "cidade": "NY",
+                    "numero": "766"
+                },
+                "caracteristicas": {
+                    "tamanho": "60m²",
+                    "numQuartos": 2,
+                    "numBanheiros": 1
+                },
+                "valor": 200000
+            },
+            {
+                "descricao": "Casa de rico",
+                "proprietario": {
+                    "nome": "Tony",
+                    "email": "Riquinho@gmail.com",
+                    "telefone": "(84) 4002-8922"
+                },
+                "endereco": {
+                    "rua": "Rua A.V",
+                    "bairro": "Centro",
+                    "cidade": "NY",
+                    "numero": "56"
+                },
+                "caracteristicas": {
+                    "tamanho": "300m²",
+                    "numQuartos": 4,
+                    "numBanheiros": 3
+                },
+                "valor": 1000000
+            },
+            {
+                "descricao": "Casa com paralelepípedo",
+                "proprietario": {
+                    "nome": "Ranger Preto",
+                    "telefone": "(84) 9090-2222"
+                },
+                "endereco": {
+                    "rua": "Rua do do Transformes",
+                    "bairro": "Dino-bairro",
+                    "cidade": "Gram Turismo",
+                    "numero": "23"
+                },
+                "caracteristicas": {
+                    "tamanho": "180m²",
+                    "numQuartos": 3,
+                    "numBanheiros": 2
+                },
+                "valor": 350000
+            },
+            {
+                "descricao": "Casa com Garagem",
+                "proprietario": {
+                    "nome": "Power Rangers Vermelho",
+                    "telefone": "(84) 2222-9090"
+                },
+                "endereco": {
+                    "rua": "Rua Transformes",
+                    "bairro": "Dino-bairro",
+                    "cidade": "Gram Turismo"
+                },
+                "caracteristicas": {
+                    "tamanho": "300m²",
+                    "numQuartos": 1,
+                    "numBanheiros": 1
+                },
+                "valor": 1
+            }
+        ]
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "cardapio": {
+      "prato": [
+        {
+          "id": "P01",
+          "nome": "Espetio de carne",
+          "descricao": "Carne de boi assada",
+          "ingredientes": {
+            "ingrediente": "Carne de boi"
+          },
+          "preco": {
+            "moeda": "brl",
+            "valor": "2 reais"
+          },
+          "calorias": "800 kcal",
+          "tempoPreparo": "13 minutos"
+        },
+        {
+          "id": "P02",
+          "nome": "Pão com ovo",
+          "descricao": "Um pão com ovo",
+          "ingredientes": {
+            "ingrediente": "Pão e ovo"
+          },
+          "preco": {
+            "moeda": "brl",
+            "valor": "2 reais"
+          },
+          "calorias": "800 kcal",
+          "tempoPreparo": "5 minutos"
+        },
+        {
+          "id": "P03",
+          "nome": "Cuzcuz com Ovo",
+          "descricao": "Um cuzuz com ovo",
+          "ingredientes": {
+            "ingrediente": "cuzcuz, ovo"
+          },
+          "preco": {
+            "moeda": "brl",
+            "valor": "4 reais"
+          },
+          "calorias": "1000 kcal",
+          "tempoPreparo": "10 minutos"
+        },
+        {
+          "id": "P04",
+          "nome": "Humburger de siri",
+          "descricao": "Um humburger de siri direto do fundo do mar",
+          "ingredientes": {
+            "ingrediente": "Pão, Siri, tomate, alface"
+          },
+          "preco": {
+            "moeda": "brl",
+            "valor": "8 reais"
+          },
+          "calorias": "1200 kcal",
+          "tempoPreparo": "10 minutos"
+        },
+        {
+          "id": "P05",
+          "nome": "Cuzcuz com salsicha",
+          "descricao": "Um cuzcuz com salsicha",
+          "ingredientes": {
+            "ingrediente": "Cuzcuz, salsicha"
+          },
+          "preco": {
+            "moeda": "brl",
+            "valor": "4 reais"
+          },
+          "calorias": "1000 kcal",
+          "tempoPreparo": "15 minutos"
+        }
+      ]
+    }
+  }
+  

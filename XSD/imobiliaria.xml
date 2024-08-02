@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<imobiliaria
+xmlns:i="http://imobiliaria.org"
+targetNamespace="http://imobiliaria.org"
+elementFormDefault="unqualified">
+    <imovel>
+      <descricao>Casa Verde</descricao>
+      <proprietario>
+        <nome>Bruce</nome>
+        <email>naosouohulk@gmail.com</email>
+        <telefone>(84) 4002-8922</telefone>
+      </proprietario>
+      <endereco>
+        <rua>Rua A.V Ali</rua>
+        <bairro>Centro</bairro>
+        <cidade>NY</cidade>
+        <numero>100</numero>
+      </endereco>
+      <caracteristicas>
+        <tamanho>200m²</tamanho>
+        <numQuartos>3</numQuartos>
+        <numBanheiros>1</numBanheiros>
+      </caracteristicas>
+      <valor>600000</valor>
+    </imovel>
+  
+    <imovel>
+      <descricao>Casa Preta</descricao>
+      <proprietario>
+        <nome>T'Challa</nome>
+        <email>panterinha01@gmail.com</email>
+        <telefone>(84) 4002-8922</telefone>
+      </proprietario>
+      <endereco>
+        <rua>Rua A.V</rua>
+        <bairro>Centro</bairro>
+        <cidade>NY</cidade>
+        <numero>766</numero>
+      </endereco>
+      <caracteristicas>
+        <tamanho>60m²</tamanho>
+        <numQuartos>2</numQuartos>
+        <numBanheiros>1</numBanheiros>
+      </caracteristicas>
+      <valor>200000</valor>
+    </imovel>
+  
+    <imovel>
+      <descricao>Casa de rico</descricao>
+      <proprietario>
+        <nome>Tony</nome>
+        <email>Riquinho@gmail.com</email>
+        <telefone>(84) 4002-8922</telefone>
+      </proprietario>
+      <endereco>
+        <rua>Rua A.V</rua>
+        <bairro>Centro</bairro>
+        <cidade>NY</cidade>
+        <numero>56</numero>
+      </endereco>
+      <caracteristicas>
+        <tamanho>300m²</tamanho>
+        <numQuartos>4</numQuartos>
+        <numBanheiros>3</numBanheiros>
+      </caracteristicas>
+      <valor>1000000</valor>
+    </imovel>
+  
+    <imovel>
+      <descricao>Casa com paralelepípedo</descricao>
+      <proprietario>
+        <nome>Ranger Preto</nome>
+        <telefone>(84) 9090-2222</telefone>
+      </proprietario>
+      <endereco>
+        <rua>Rua do do Transformes</rua>
+        <bairro>Dino-bairro</bairro>
+        <cidade>Gram Turismo</cidade>
+        <numero>23</numero>
+      </endereco>
+      <caracteristicas>
+        <tamanho>180m²</tamanho>
+        <numQuartos>3</numQuartos>
+        <numBanheiros>2</numBanheiros>
+      </caracteristicas>
+      <valor>350000</valor>
+    </imovel>
+  
+    <imovel>
+      <descricao>Casa com Garagem</descricao>
+      <proprietario>
+        <nome> Power Rangers Vermelho</nome>
+        <telefone>(84) 2222-9090</telefone>
+      </proprietario>
+      <endereco>
+        <rua>Rua Transformes</rua>
+        <bairro>Dino-bairro</bairro>
+        <cidade>Gram Turismo</cidade>
+      </endereco>
+      <caracteristicas>
+        <tamanho>300m²</tamanho>
+        <numQuartos>1</numQuartos>
+        <numBanheiros>1</numBanheiros>
+      </caracteristicas>
+      <valor>1</valor>
+    </imovel>
+  </imobiliaria>
+  

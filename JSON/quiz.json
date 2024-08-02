@@ -1,0 +1,137 @@
+{
+    "quiz": {
+      "versao": "1.0",
+      "disciplina": "Jogos Jogados jogantes",
+      "professor": {
+        "nome": "João Pedro",
+        "matrícula": "40028922"
+      },
+      "turma": "INFOWEB 2021 4V",
+      "data": "20/03/2024",
+      "questões": {
+        "questão": [
+          {
+            "enunciado": "O Minecraft foi criado em que ano?",
+            "pontuação": 10,
+            "alternativas": {
+              "alternativa": [
+                {
+                  "correta": "sim",
+                  "texto": "2009"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "2011"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "2010"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "2012"
+                }
+              ]
+            }
+          },
+          {
+            "enunciado": "Qual foi o jogo do ano de 2020",
+            "pontuação": null,
+            "alternativas": {
+              "alternativa": [
+                {
+                  "correta": "sim",
+                  "texto": "The Last of Us Part II"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "Animal Crossing: New Horizons"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "Ghost of Tsushima"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "Final Fantasy VII Remake"
+                }
+              ]
+            }
+          },
+          {
+            "enunciado": "God of War de 2018 se passa em qual mitologia",
+            "pontuação": 10,
+            "alternativas": {
+              "alternativa": [
+                {
+                  "correta": "sim",
+                  "texto": "Mitologia Nórdica"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "Mitologia Graga"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "Mitologia Egípcia"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "Mitologia Japonesa"
+                }
+              ]
+            }
+          },
+          {
+            "enunciado": "Qual foi o primeiro jogo a ir para o espaço?",
+            "pontuação": 20,
+            "alternativas": {
+              "alternativa": [
+                {
+                  "correta": "nao",
+                  "texto": "Super Mario"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "The Legend of Zelda"
+                },
+                {
+                  "correta": "sim",
+                  "texto": "Tetris"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "Donkey Kong"
+                }
+              ]
+            }
+          },
+          {
+            "enunciado": "Qual jogo possou por uma Epidemia Virtual",
+            "pontuação": 20,
+            "alternativas": {
+              "alternativa": [
+                {
+                  "correta": "sim",
+                  "texto": "Word of Warcraft"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "Magic"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "Deltarune"
+                },
+                {
+                  "correta": "nao",
+                  "texto": "Ragnarok"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+  
