@@ -1,99 +1,76 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pokémon - PokéAPI</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 
-    <title>Poke... No sabo</title>
 </head>
 <body>
-    <div class="poke-container" id="poke-container">
-        
-    </div>
-    <div class="pokemon-info" id="pokemon-info">
 
-        <img id="pokemon-image" src="" alt="Pokémon">
-        <h2 id="poke-name"></h2>
-        <p><strong>Altura:</strong> <span id="pokemon-height"></span> m</p>
-        <p><strong>Peso:</strong> <span id="pokemon-weight"></span> kg</p>
-        <p><strong>Tipo:</strong> <span id="pokemon-type"></span></p>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Lista de Pokémon</h1>
+
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button id="load-pokemon-btn" class="btn btn-primary btn-lg">Carregar Pokémon</button>
+        </div>
+
+
+        <div class="row mt-4" id="pokemon-grid"></div>
     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
         async function loadPokemon() {
             try {
-                const url = 'https://pokeapi.co/api/v2/pokemon?limit=20'; 
+                const url = 'https://pokeapi.co/api/v2/pokemon?limit=20';
                 const response = await fetch(url);
-                const data = await response.json();
-                const pokemons = data.results;
+                const data = await response.json(); 
+                const pokemonList = data.results;
 
-                const pokeContainer = document.getElementById('poke-container');
-                pokeContainer.innerHTML = ''; // limpar
+                const pokemonGrid = document.getElementById('pokemon-grid');
+                pokemonGrid.innerHTML = '';
 
-                for (const [index, pokemon] of pokemons.entries()) {
-                    const responseDetails = await fetch(pokemon.url);
-                    const pokemonDetails = await responseDetails.json();
-                    const imageUrl = pokemonDetails.sprites.front_default;
+                for (const pokemon of pokemonList) {
+                    const pokemonDetails = await fetch(pokemon.url);
+                    const details = await pokemonDetails.json();
 
-                    // criar o elemento da pokenola
-                    const pokeball = document.createElement('div');
-                    pokeball.className = 'pokeball';
-                    pokeball.setAttribute('data-index', index);
+                    const imageUrl = details.sprites.front_default;
+                    const name = details.name;
+                    const types = details.types.map(typeInfo => typeInfo.type.name).join(', ');
+                    const height = details.height / 10;
+                    const weight = details.weight / 10;
 
-                    // adicionar pokebola 
-                    pokemonContainer.appendChild(pokeball);
+                    const cardHTML = `
+                        <div class="col-md-3 mb-4">
+                            <div class="poke-card">
+                                <img src="${imageUrl}" alt="${name}">
+                                <h2 class="poke-name">${name}</h2>
+                                <p class="poke-type">Tipo: ${types}</p>
+                                <div class="poke-stats">
+                                    <p><strong>Altura:</strong> ${height} m</p>
+                                    <p><strong>Peso:</strong> ${weight} kg</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
 
-                  
-                    pokeball.addEventListener('click', () => {
-                        displayPokemonInfo(pokemonDetails, imageUrl);
-                    });
+                    pokemonGrid.innerHTML += cardHTML;
                 }
 
             } catch (error) {
-                console.error('Erro ao carregar os Pokémon:', error);
+                console.error('Erro ao buscar os Pokémon:', error);
                 alert('Não foi possível carregar os Pokémon.');
             }
         }
 
-        //exibir os pokemons
-        function displayPokemonInfo(pokemonDetails, imageUrl) {
-            const pokemonInfo = document.getElementById('pokemon-info');
-            const pokemonImage = document.getElementById('pokemon-image');
-            const pokemonName = document.getElementById('pokemon-name');
-            const pokemonHeight = document.getElementById('pokemon-height');
-            const pokemonWeight = document.getElementById('pokemon-weight');
-            const pokemonAbilities = document.getElementById('pokemon-type');
-
-            // Preenche os detalhes do Pokémon
-            pokemonImage.src = imageUrl;
-            pokemonName.textContent = pokemonDetails.name;
-            pokemonHeight.textContent = pokemonDetails.height / 10; // Altura em metros
-            pokemonWeight.textContent = pokemonDetails.weight / 10; // Peso em kg
-            pokemonAbilities.textContent = pokemonDetails.abilities.map(a => a.ability.name).join(', ');
-
-            // Mostra a área de informações
-            pokemonInfo.style.display = 'block';
-        }
-
-        // Carregar os Pokémon ao iniciar
-        loadPokemon();
+        document.getElementById('load-pokemon-btn').addEventListener('click', loadPokemon);
     </script>
 
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" ></script>
 </body>
 </html>
