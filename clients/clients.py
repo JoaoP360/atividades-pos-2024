@@ -10,29 +10,29 @@ def list_users():
         for user in users:
             print(f"ID: {user['id']}, Name: {user['name']}, Email: {user['email']}")
     else:
-        print("Failed to retrieve users.")
+        print("Falha ao recuperar usuários.")
 
 def list_user_todos(user_id):
     response = requests.get(f"{BASE_URL}/users/{user_id}/todos")
     if response.status_code == 200:
         todos = response.json()
         for todo in todos:
-            status = "Completed" if todo['completed'] else "Pending"
+            status = "Completo" if todo['Completo'] else "Pendente"
             print(f"ID: {todo['id']}, Title: {todo['title']}, Status: {status}")
     else:
-        print("Failed to retrieve todos for the user.")
+        print("Falha ao criar usuário")
 
 def create_user():
-    name = input("Enter name: ")
-    username = input("Enter username: ")
-    email = input("Enter email: ")
+    name = input("Insira Nome: ")
+    username = input("Insira Username: ")
+    email = input("Insira Email: ")
     user_data = {"name": name, "username": username, "email": email}
 
     response = requests.post(f"{BASE_URL}/users", json=user_data)
     if response.status_code == 201:
-        print("User created successfully:", response.json())
+        print("Usuário criado com sucesso:", response.json())
     else:
-        print("Failed to create user.")
+        print("Falha ao criar usuário.")
 
 def read_user(user_id):
     response = requests.get(f"{BASE_URL}/users/{user_id}")
@@ -40,10 +40,10 @@ def read_user(user_id):
         user = response.json()
         print(json.dumps(user, indent=2))
     else:
-        print("User not found.")
+        print("Usuário não encontrado.")
 
 def update_user(user_id):
-    print("Enter new details (leave blank to keep current value):")
+    print("Insira novos detalhes (deixe em branco para manter o valor atual):")
     name = input("Name: ")
     username = input("Username: ")
     email = input("Email: ")
@@ -99,6 +99,6 @@ def main():
             break
         else:
             print("Opção invalida.")
-2
+
 if __name__ == "__main__":
     main()
